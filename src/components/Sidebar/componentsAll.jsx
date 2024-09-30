@@ -39,8 +39,9 @@ import Contact1 from "../Blocks/Contact/Contact1";
 import Contact2 from "../Blocks/Contact/Contact2";
 import Portfolio from "../Blocks/Portfolio/Portfolio";
 import Footer2 from "../Blocks/Footers/Footer2";
+import NavbarLogIn from "../Navbars/NavbarLogIn";
 
-const componentsAll = () => {
+const ComponentsAll = () => {
     const [activeItem, setActiveItem] = useState(0);
     const menuItems = [
         { label: "avatar", href: "#avatar" },
@@ -95,9 +96,9 @@ const componentsAll = () => {
 
 
     return (
-        <div className=''>
-
-            <div className='pt-[70px]'>
+        <div className='mt-[64px]'>
+            <NavbarLogIn />
+            <div>
                 <div
                     className="fixed top-0 left-0 h-full w-[200px] bg-gradient-to-b from-[#1e1f29] to-[#3e3a49] shadow-lg text-[#CDD7D6] overflow-y-auto no-scrollbar">
                     <div className="flex flex-col items-center space-y-6 py-6">
@@ -248,4 +249,4 @@ const componentsAll = () => {
     );
 };
 
-export default componentsAll;
+export default ComponentsAll;
